@@ -29,6 +29,7 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 
+
 page "/feed.xml", layout: false
 
 activate :directory_indexes
@@ -61,6 +62,7 @@ activate :syntax
 #   page "/admin/*"
 # end
 
+page '/', layout: :hlayout
 page "/blog/*", layout: :post
 page "/blog/tags/*", layout: :layout
 page "/blog/by-year/*", layout: :layout
@@ -126,8 +128,8 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :rsync
-  deploy.host   = 'writelesscode.com'
-  deploy.path   = 'www/writelesscode.com'
+  deploy.host   = ''
+  deploy.path   = ''
 
   # Optional Settings
   deploy.build_before = true
