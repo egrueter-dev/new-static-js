@@ -12,3 +12,8 @@ gem 'nokogiri'
 gem 'middleman-syntax'
 gem "middleman-disqus"
 gem 'middleman-deploy'
+
+
+# Deploying to herkou
+gem "puma"
+gem 'rack'
