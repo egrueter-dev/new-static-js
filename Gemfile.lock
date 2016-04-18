@@ -141,3 +141,7 @@ DEPENDENCIES
   middleman-disqus
   middleman-syntax
   nokogiri
+  rack
+
+BUNDLED WITH
+   1.10.6
